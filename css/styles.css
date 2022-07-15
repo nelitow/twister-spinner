@@ -1,15 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600");
 * {
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+}
 
-.Verde, .Green {
-  background-color: #389916; }
+.verde,
+.green {
+  background-color: #389916;
+  color: #fff;
+}
 
-.Vermelho, .Red {
-  background-color: #d9152b; }
+.vermelho,
+.red {
+  background-color: #d9152b;
+  color: #fff;
+}
 
-.Amarelo, .Yellow {
-  background-color: #f7e809; }
+.amarelo,
+.yellow {
+  background-color: #f7e809;
+}
 
-.Azul, .Blue {
-  background-color: #1553aa; }
+.azul,
+.blue {
+  background-color: #1553aa;
+  color: #fff;
+}
+nav ul {
+  margin-bottom: 0;
+  display: flex;
+  /* vertically align in a row */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+nav li a img {
+  width: 25px;
+  height: 20px;
+}

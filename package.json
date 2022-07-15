@@ -1,29 +1,24 @@
 {
   "name": "twister-spinner",
   "version": "1.0.0",
-  "description": "",
+  "description": "Random generator website for those that lost their Twister game spinner  https://twisterspin.online/",
   "main": "index.js",
-  "dependencies": {
-    "gulp-cli": "^2.2.0",
-    "npm-check-updates": "^3.1.23",
-    "sweetalert2": "^7.33.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "browser-sync": "^2.26.7",
-    "cssnano": "^4.1.10",
-    "gulp": "^4.0.2",
-    "gulp-connect-php": "^1.0.3",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "dev": "npm run browsersync",
+    "browsersync": "browser-sync start --proxy 'https://twister-spinner.test' --files '*.php,css/*.css,js/*.js'"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelitow/twister-spinner.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelitow/twister-spinner/issues"
+  },
+  "homepage": "https://github.com/nelitow/twister-spinner#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
 }
